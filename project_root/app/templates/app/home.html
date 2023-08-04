@@ -1,0 +1,34 @@
+```html
+{% extends 'app/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to the Ship Crew Management System</h1>
+    <p>This system automates the assignment of crew to ships, increasing efficiency and reducing errors.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Crew Members</h2>
+            <a href="{% url 'crew_list' %}" class="btn btn-primary">View Crew Members</a>
+        </div>
+        <div class="col-md-6">
+            <h2>Ships</h2>
+            <a href="{% url 'ship_list' %}" class="btn btn-primary">View Ships</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Assignments</h2>
+            <a href="{% url 'assignment_list' %}" class="btn btn-primary">View Assignments</a>
+        </div>
+        <div class="col-md-6">
+            <h2>Automate Assignment</h2>
+            <a href="{% url 'assign_crew_to_ships' %}" class="btn btn-primary">Assign Crew to Ships</a>
+        </div>
+    </div>
+
+    {% messages %}
+</div>
+{% endblock %}
+```

@@ -1,0 +1,1 @@
+The `__init__.py` file is typically empty in Django projects. This file is required for Python to treat the directory as a package. It can be left empty or can contain valid Python code. For this project, it will be left empty.
